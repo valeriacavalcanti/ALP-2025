@@ -1,0 +1,20 @@
+l1, l2, l3 = input().split()
+l1, l2, l3 = float(l1), float(l2), float(l3)
+
+if (l1 > l2) and (l1 > l3):
+  maior = l1
+  soma_outros_lados = l2 + l3
+else:
+  if (l2 > l3):
+    maior = l2
+    soma_outros_lados = l1 + l3
+  else:
+    maior = l3
+    soma_outros_lados = l1 + l2
+
+if (soma_outros_lados > maior):
+  perimetro = l1 + l2 + l3
+  print('Perimetro = {:.1f}'.format(perimetro))
+else:
+  area = ((l1 + l2) * l3) / 2
+  print('Area = {:.1f}'.format(area))
