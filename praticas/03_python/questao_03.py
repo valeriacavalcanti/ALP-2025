@@ -1,0 +1,5 @@
+nome = input('Informe o primeiro nome: ')
+ultimo_nome = input('Informe o último nome: ')
+idade = int(input('Informe a idade: '))
+salario = float(input('Informe o salário: '))
+tipo = input('Informe o tipo do desconto: ')
